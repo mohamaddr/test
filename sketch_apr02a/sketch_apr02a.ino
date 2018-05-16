@@ -96,10 +96,13 @@
 
 //starts handling input from the controller.
 handleInput();
+ handleInput2();
+ car.stop();
 gyro.update();
 blinkers();
 
   }
+ 
   
   void blinkers(){
     Serial.println(car.getSpeed());
